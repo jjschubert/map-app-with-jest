@@ -2,12 +2,12 @@ import mapChooser from '../mapChooser';
 
 describe("mapChooser", function(){
     it("returns an image based on input given to it", function(){
-        let expected = "portland.jpg";
-        let actual = mapChooser("portland");
+        let expected = "MPLS.jpg";
+        let actual = mapChooser("MPLS");
         expect(actual).toEqual(expected);
     });
     it("returns a default image when no input is given", function() {
-        let expected = "default.jpg";
+        let expected = "none.jpg";
         let actual = mapChooser("");
         expect(actual).toEqual(expected);
     })
